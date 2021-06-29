@@ -29,3 +29,5 @@ int main(){
     int solution=binarySearch(arr,10,8);
     printf("the index number is %d",solution);
 }
+
+
