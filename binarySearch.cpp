@@ -6,8 +6,9 @@ int binarySearch(int arr[],int n,int x){
     int left,right,mid;
     left=0;
     right=n-1;
+    sort(arr,arr+n);
     while(left<=right){
-        mid=(left+right)/2;
+        mid=left+(right-left)/2;
         if(arr[mid]==x){
             return mid;
         }
@@ -25,8 +26,8 @@ int binarySearch(int arr[],int n,int x){
 
 
 int main(){
-    int arr[]={1,2,3,4,5,6,7,8,9,10};
-    int solution=binarySearch(arr,10,8);
+    int arr[]={85,25,1,32,54,6};
+    int solution=binarySearch(arr,6,85);
     printf("the index number is %d",solution);
 }
 
